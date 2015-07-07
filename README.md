@@ -24,8 +24,11 @@ or here: https://www.python.org/download/releases/3.2.2/
 Instructions on setting up Pyton on your computer can be found here: https://apps.carleton.edu/curricular/cs/resources/source/python_install/
 
 
-##Usage:
-First navigate in your terminal to the folder in which RunExifTool.py is contained.
+##Usage Instructions:
+(Mac) Open a terminal window by navigating to "Applications -> Utilities -> Terminal" and clicking on the Terminal icon
+(PC) Open a command prompt by selecting Start/Run and typing cmd and Enter or Start/Programs/Accessories/Command Prompt.
+
+Navigate in your terminal to the folder in which RunExifTool.py is contained.
 
       cd PATH_TO_FOLDER_CONTAINING_EXIFTOOL
 
