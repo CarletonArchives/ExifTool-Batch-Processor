@@ -1,5 +1,4 @@
 # ExifTool-Batch-Processor
-#exiftool-Batch-Processor
 Code by Caitlin Donahue caitlindonahue95@gmail.com
 
 This program will automatically run exiftool on the folders contained within a directory supplied by the user.
@@ -13,11 +12,11 @@ Documentation for exiftool can be found here: http://www.sno.phy.queensu.ca/~phi
 Instructions for exiftool can be found here: https://wiki.carleton.edu/display/carl/Exif+Metadata+Extraction+Tool
 exiftool does not require any installation.
 
-##Installing Perl
+##Installing Perl:
 Exiftool requires Perl version 5.004 or newer to be installed on your computer.
 Instructions on installing Perl can be found here: http://learnperl.scratchcomputing.com/install/
 
-##Installing Python
+##Installing Python:
 You will need Python installed on your computer to run this program.
 Python can be found here: https://www.python.org/download/releases/2.7.5/
 or here: https://www.python.org/download/releases/3.2.2/
@@ -27,7 +26,8 @@ Instructions on setting up Pyton on your computer can be found here: https://app
 
 ##Usage:
 First navigate in your terminal to the folder in which RunExifTool.py is contained.
-- cd PATH_TO_FOLDER_CONTAINING_EXIFTOOL
+
+      cd PATH_TO_FOLDER_CONTAINING_EXIFTOOL
 
 Once there there are several options on how to run the program.
 
