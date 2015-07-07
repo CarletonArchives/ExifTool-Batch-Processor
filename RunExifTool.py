@@ -16,29 +16,6 @@ import platform
 import ast
 import errno
 
-def readSettingsFile():
-    if not os.path.isfile("exif_settings.txt"):
-        with open("exif_settings.txt", "w") as f:
-            f.write("PATH_TO_EXIF:\n")
-    with open("exif_settings.txt") as f:
-        f_content = [line.rstrip() for line in f]
-        parse_state = "none"
-        path = ""
-        for i in range(len(f_content)):
-            line = f_content[i]
-            #no parse state yet
-            #excludes is the files that are excluded from being checked
-            #time is the sleep time in the error check
-            if parse_state == "none":
-                if line == "PATH_TO_EXIF:":
-                    parse_state = "pathtoexif"
-            elif parse_state == "pathtoexif":
-                if line != "":
-                    path = line
-                else:
-                    parse_state = "none"
-        return path
-
 def usage_message():
     print "RunExifTool is a program to automatically run exiftool on a set of bags contained within a directory supplied by the user" 
     print "--------------------"
@@ -64,38 +41,19 @@ def main():
             usage_message()
         else:
             parent = sys.argv[1]
-    elif len(sys.argv) == 3:
-        parent = sys.argv[1]
-        exif = sys.argv[2]
     if parent == "":
         #get file locations from the user
         print "Please enter the directory that holds the bags you would like to scan: "
         parent = raw_input().strip()
-    temp = readSettingsFile()
-    #if there was no command argument and there was a path in the file
-    if exif == "" and temp != "":
-        exif = temp
-    #if there was a command argument, but no path in the file
-    elif exif != "" and temp =="":
-        with open("exif_settings.txt", "a") as settings:
-            settings.write(exif)
-    #if there was no command argument and nothing in the file
-    elif exif == "" and temp == "":
-        print "Please enter the location of your exif program: "
-        exif = raw_input().strip()
-        with open("exif_settings.txt", "a") as settings:
-            settings.write(exif)
 
     #check what os the user is running to account for terminal command differences
     if platform.system() == "Windows":
-        exifName = "perl exiftool"
+        exifName = "exiftool.pl"
     else:
         exifName = "./exiftool"
     #make sure the directories are in the correct format
     parent = parent.strip().strip("'").strip('"')
-    exif = exif.strip().strip("'").strip('"')
     #navigate to the file that the user's exif program is located in     
-    os.chdir(exif)
     #make a list of all of the folders in this directory
     path_list = [x for x in os.listdir(parent)]
 
@@ -132,10 +90,7 @@ def main():
             print "--------------------------------------"
             print "Run on " + full_folder_path + " complete"
             print "--------------------------------------"
-
-
     print "--------------------------------------"
     print "Run Complete"
     print "--------------------------------------"
-    os.chdir(original_location)
 main()
