@@ -6,7 +6,7 @@ This program will automatically run exiftool on the folders contained within a d
 ##ExifTool:
 ExifTool is a program written by Phil Harvey to read and write the meta information contained in files.
 ExifTool can be dowloaded here: http://www.sno.phy.queensu.ca/~phil/exiftool/
-Fpor this program you want to install the *Image-ExifTool distribution*
+For this program you want to install the *Image-ExifTool distribution* (This should be the first Download button on the page)
 Documentation for exiftool can be found here: http://www.sno.phy.queensu.ca/~phil/exiftool/exiftool_pod.html#reading_examples
 Instructions for exiftool can be found here: https://wiki.carleton.edu/display/carl/Exif+Metadata+Extraction+Tool
 
