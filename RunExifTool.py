@@ -48,7 +48,7 @@ def main():
     if platform.system() == "Windows":
         exifName = "exiftool.pl"
     else:
-        exifName = "./exiftool"
+        exifName = "exiftool"
     #make sure the directories are in the correct format
     parent = parent.strip().strip("'").strip('"')
     #navigate to the file that the user's exif program is located in     
