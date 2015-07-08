@@ -3,14 +3,50 @@ Code by Caitlin Donahue caitlindonahue95@gmail.com
 
 This program will automatically run exiftool on the folders contained within a directory supplied by the user.
 
-Once you have run RunExifTool.py it will store the path to your exiftool files.
-
 ##ExifTool:
 ExifTool is a program written by Phil Harvey to read and write the meta information contained in files.
 ExifTool can be dowloaded here: http://www.sno.phy.queensu.ca/~phil/exiftool/
+Fpor this program you want to install the *Image-ExifTool distribution*
 Documentation for exiftool can be found here: http://www.sno.phy.queensu.ca/~phil/exiftool/exiftool_pod.html#reading_examples
 Instructions for exiftool can be found here: https://wiki.carleton.edu/display/carl/Exif+Metadata+Extraction+Tool
-exiftool does not require any installation.
+
+###Preparing exiftool:
+There is a little bit of preparation required for this pogram to work with Exifool properly.
+####Windows:
+On Windows you need to add exiftool to your path.
+Basic instructions on installing exiftool can be found under the *Full Perl Distribution* section here:
+http://owl.phy.queensu.ca/~phil/exiftool/install.html#Windows
+
+1. Download *Image-ExifTool distribution* and unzip the file. 
+
+2. Rename the file "exiftool" to "exiftool.pl"
+
+3. in the directory C:\Windows create a directory called "exiftool"
+
+4. in the files you downloaded, move the folder "lib" and the file "exiftool.pl" to C:\Windows\exiftool
+
+5. if you are using Windows 8 go to the Control Panel->System->Advanced System Settings-> Environment Variables. If you are using an earlier version of windows go to My Computer->Properties->Advanced->Environmental Settings.
+
+6. Locate the variable named PATH. Click to edit that variable and add C:\Windows\exiftool; to the end.
+
+7. To check if these steps were successful go to the Command Prompt and type "exiftool.pl" and press enter. If successful an information message about exiftool should pop up.
+
+8. You are now ready to run this program.
+
+####Mac:
+Basic instructions on installing exiftool on a mac can be found under the *Full Perl Distribution* section here:
+http://owl.phy.queensu.ca/~phil/exiftool/install.html#OSX
+
+1. Download *Image-ExifTool dstribution* The file should have a name like "Image-ExifTool-#.##.tar.gz", where #.## is the version number. in future steps, replace #.## with that number. Unzip the file to your Desktop.
+2. Launch the terminal.
+3. In the terminal enter the following lines:
+
+                  cd ~/Desktop
+                  tar -xzf Image-ExifTool-#.##.tar.gz
+                  cd Image-ExifTool-#.##
+                  sudo cp -r exiftool lib /usr/bin
+4. you can check if these steps were successful by opening a new terminal window, and typing "exiftool" If the steps were successful a usage message should show up.
+
 
 ##Installing Perl:
 Exiftool requires Perl version 5.004 or newer to be installed on your computer.
@@ -39,16 +75,11 @@ Once there there are several options on how to run the program.
   - This will display a usage message.
 
 - python RunExifTool.py:
-  - Running with no arguments will prompt you for the required paths.
+  - Running with no arguments will prompt you for the directory you would like to analyze.
 
-- python RunExifTool.py <path to files to validate>:
-  - If you have run the program before, or if you have added the location of your exiftool files to the exif_settings.txt file, this will automatically run.
-  - If you have not already supplied the program with the location of your exiftool files, the program will prompt you for the path.
-  - Upon prompting you for the path to the exiftool files, the program will save their location for future use.
-
-- python RunExifTool.py <path to files to validate> <path to exiftool Files>:
-  - This will run the program without needing to prompt the user for any paths
-  - The supplied path to the exiftool files will be added to the settings file.
+- python RunExifTool.py <path to files to analyze>:
+  - This will automatically run Exiftool on the directory you provide
+  
 
 ###Input
 - A directory of bags (folders) to run exiftool's analysis on.
