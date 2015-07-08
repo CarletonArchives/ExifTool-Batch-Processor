@@ -17,13 +17,20 @@ On Windows you need to add exiftool to your path.
 Basic instructions on installing exiftool can be found under the *Full Perl Distribution* section here:
 http://owl.phy.queensu.ca/~phil/exiftool/install.html#Windows
 
-1.Download *Image-ExifTool distribution* and unzip the file. 
+1. Download *Image-ExifTool distribution* and unzip the file. 
+
 2. Rename the file "exiftool" to "exiftool.pl"
+
 3. in the directory C:\Windows create a directory called "exiftool"
+
 4. in the files you downloaded, move the folder "lib" and the file "exiftool.pl" to C:\Windows\exiftool
+
 5. if you are using Windows 8 go to the Control Panel->System->Advanced System Settings-> Environment Variables. If you are using an earlier version of windows go to My Computer->Properties->Advanced->Environmental Settings.
+
 6. Locate the variable named PATH. Click to edit that variable and add C:\Windows\exiftool; to the end.
+
 7. To check if these steps were successful go to the Command Prompt and type "exiftool.pl" and press enter. If successful an information message about exiftool should pop up.
+
 8. You are now ready to run this program.
 
 ####Mac:
@@ -32,7 +39,7 @@ http://owl.phy.queensu.ca/~phil/exiftool/install.html#OSX
 
 1. Download *Image-ExifTool dstribution* The file should have a name like "Image-ExifTool-#.##.tar.gz", where #.## is the version number. in future steps, replace #.## with that number. Unzip the file to your Desktop.
 2. Launch the terminal.
-3. In the terminal type:
+3. In the terminal enter the following lines:
 
                   cd ~/Desktop
                   tar -xzf Image-ExifTool-#.##.tar.gz
