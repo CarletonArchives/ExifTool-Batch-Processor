@@ -53,9 +53,9 @@ Exiftool requires Perl version 5.004 or newer to be installed on your computer.
 Instructions on installing Perl can be found here: http://learnperl.scratchcomputing.com/install/
 
 ##Installing Python:
-You will need Python installed on your computer to run this program.
+You will need Python 2.7 installed on your computer to run this program.
 Python can be found here: https://www.python.org/download/releases/2.7.5/
-or here: https://www.python.org/download/releases/3.2.2/
+
 
 Instructions on setting up Pyton on your computer can be found here: https://apps.carleton.edu/curricular/cs/resources/source/python_install/
 
