@@ -1,7 +1,7 @@
 # ExifTool-Batch-Processor
 Code by Caitlin Donahue caitlindonahue95@gmail.com
 
-This program will automatically run ExifTool on the folders contained within a directory supplied by the user.  A CSV report and an XML report of the ExifTool analysis will be placed in each bag being processed in this folder: BAGNAME/data/meta
+This program will automatically run ExifTool on the folders contained within a directory supplied by the user.  A CSV report and an XML report of the ExifTool analysis will be placed in a subfolder of each processed bag titled /data/meta.
 
 ##ExifTool:
 ExifTool is a program written by Phil Harvey to read and write the meta information contained in files.
