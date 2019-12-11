@@ -89,6 +89,7 @@ Once there there are several options on how to run the program.
 - A .csv file containing exiftool's analysis in each bag.
 
 ###Example of syntax
+
 If you would like to run exiftool using different options, use these samples to execute the program in Bach or a command prompt.
 
 exiftool -csv -r /Users/nwilson/Desktop/20120430_3_publicationsphotos_2001 > /Users/nwilson/Desktop/20120430_3_publicationsphotos_2001/meta/metadata.csv
