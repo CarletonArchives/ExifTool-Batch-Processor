@@ -93,13 +93,13 @@ Once there there are several options on how to run the program.
 If you would like to run exiftool using different options, use these samples to execute the program in Bach or a command prompt.
 
 - exiftool -csv -r /Users/nwilson/Desktop/20120430_3_publicationsphotos_2001 > /Users/nwilson/Desktop/20120430_3_publicationsphotos_2001/meta/metadata.csv
-- Writes a csv file of all tagged metadata, recursively going through all of Users/nwilson/Desktop/20120430_3_publicationsphotos_2001 and writing that information to /Users/nwilson/Desktop/20120430_3_publicationsphotos_2001/meta/metadata.csv
+  - Writes a csv file of all tagged metadata, recursively going through all of Users/nwilson/Desktop/20120430_3_publicationsphotos_2001 and writing that information to /Users/nwilson/Desktop/20120430_3_publicationsphotos_2001/meta/metadata.csv
 
 - exiftool -X /Volumes/ARCHIVES/SIPS/1-unprocessed/20120605_HonorsCompsTheater2012/THE_TEMPEST_10_27_2011.mp4 > /Users/nwilson/Desktop/metadata.xml 
-- Writes an XML file of all tagged metadata non-recursively for THE_TEMPEST_10_27_2011.mp4 and writes the results to metadata.xml.
+  - Writes an XML file of all tagged metadata non-recursively for THE_TEMPEST_10_27_2011.mp4 and writes the results to metadata.xml.
 
 - exiftool -r -X /Volumes/ARCHIVES/SIPS/11-Bagit/20120429_NoonNewsBulletinSamples1996 > /Volumes/ARCHIVES/SIPS/11-Bagit/20120429_NoonNewsBulletinSamples1996/meta/exif.xml
-- Writes and XML file of all tagged metadata recursively for 20120429_NoonNewsBulletinSamples1996 and writes the result to a new xml file in /Volumes/ARCHIVES/SIPS/11-Bagit/20120429_NoonNewsBulletinSamples1996/meta/exif.xml
+  - Writes and XML file of all tagged metadata recursively for 20120429_NoonNewsBulletinSamples1996 and writes the result to a new xml file in /Volumes/ARCHIVES/SIPS/11-Bagit/20120429_NoonNewsBulletinSamples1996/meta/exif.xml
 
 - exiftool -r -X /Volumes/ARCHIVES/SIPS/11-Bagit/20120429_NoonNewsBulletinSamples1996 > /Volumes/ARCHIVES/SIPS/11-Bagit/20120429_NoonNewsBulletinSamples1996/meta/exif.xml ; exiftool -X /Volumes/ARCHIVES/SIPS/1-unprocessed/20120605_HonorsCompsTheater2012/THE_TEMPEST_10_27_2011.mp4 > /Users/nwilson/Desktop/metadata.xml
-- Writes an XML file first for all files in the 20120429_NoonNewsBulletinSamples1996 directory, and then an XML file for THE_TEMPEST_10_27_2011.mp4.  The ";" separator allows you to run a series of commands.  For more information on different conditions you can apply see: http://www.comptechdoc.org/os/linux/manual2/runningcommands.html
+  - Writes an XML file first for all files in the 20120429_NoonNewsBulletinSamples1996 directory, and then an XML file for THE_TEMPEST_10_27_2011.mp4.  The ";" separator allows you to run a series of commands.  For more information on different conditions you can apply see: http://www.comptechdoc.org/os/linux/manual2/runningcommands.html
