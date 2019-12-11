@@ -94,7 +94,7 @@ If you would like to run exiftool using different options, use these samples to 
 
 - exiftool -csv -r /Users/nwilson/Desktop/20120430_3_publicationsphotos_2001 > /Users/nwilson/Desktop/20120430_3_publicationsphotos_2001/meta/metadata.csv
 
-Writes a csv file of all tagged metadata, recursively going through all of Users/nwilson/Desktop/20120430_3_publicationsphotos_2001 and writing that information to /Users/nwilson/Desktop/20120430_3_publicationsphotos_2001/meta/metadata.csv
+- - Writes a csv file of all tagged metadata, recursively going through all of Users/nwilson/Desktop/20120430_3_publicationsphotos_2001 and writing that information to /Users/nwilson/Desktop/20120430_3_publicationsphotos_2001/meta/metadata.csv
 
 - exiftool -X /Volumes/ARCHIVES/SIPS/1-unprocessed/20120605_HonorsCompsTheater2012/THE_TEMPEST_10_27_2011.mp4 > /Users/nwilson/Desktop/metadata.xml 
 
