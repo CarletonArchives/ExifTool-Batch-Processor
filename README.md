@@ -3,16 +3,16 @@ Code by Caitlin Donahue caitlindonahue95@gmail.com
 
 This program will automatically run ExifTool on the folders contained within a directory supplied by the user.  A CSV report and an XML report of the ExifTool analysis will be placed in a subfolder of each processed bag titled /data/meta.
 
-##ExifTool:
+## ExifTool:
 ExifTool is a program written by Phil Harvey to read and write the meta information contained in files.
 ExifTool can be dowloaded here: http://www.sno.phy.queensu.ca/~phil/exiftool/
 For this program you want to install the *Image-ExifTool distribution* (This should be the first Download button on the page)
-Documentation for exiftool can be found here: http://www.sno.phy.queensu.ca/~phil/exiftool/exiftool_pod.html#reading_examples
-Instructions for exiftool can be found here: https://wiki.carleton.edu/display/carl/Exif+Metadata+Extraction+Tool
+Documentation for ExifTool can be found here: http://www.sno.phy.queensu.ca/~phil/exiftool/exiftool_pod.html#reading_examples
+Instructions for ExifTool can be found here: https://wiki.carleton.edu/display/carl/Exif+Metadata+Extraction+Tool
 
-###Preparing exiftool:
-There is a little bit of preparation required for this pogram to work with Exifool properly.
-####Windows:
+### Preparing exiftool:
+There is a little bit of preparation required for this program to work with ExifTool properly.
+#### Windows:
 On Windows you need to add exiftool to your path.
 Basic instructions on installing exiftool can be found under the *Full Perl Distribution* section here:
 http://owl.phy.queensu.ca/~phil/exiftool/install.html#Windows
@@ -33,7 +33,7 @@ http://owl.phy.queensu.ca/~phil/exiftool/install.html#Windows
 
 8. You are now ready to run this program.
 
-####Mac:
+#### Mac:
 Basic instructions on installing exiftool on a mac can be found under the *Full Perl Distribution* section here:
 http://owl.phy.queensu.ca/~phil/exiftool/install.html#OSX
 
@@ -48,11 +48,11 @@ http://owl.phy.queensu.ca/~phil/exiftool/install.html#OSX
 4. you can check if these steps were successful by opening a new terminal window, and typing "exiftool" If the steps were successful a usage message should show up.
 
 
-##Installing Perl:
+## Installing Perl:
 Exiftool requires Perl version 5.004 or newer to be installed on your computer.
 Instructions on installing Perl can be found here: http://learnperl.scratchcomputing.com/install/
 
-##Installing Python:
+## Installing Python:
 You will need Python 2.7 installed on your computer to run this program.
 Python can be found here: https://www.python.org/download/releases/2.7.5/
 
@@ -60,7 +60,7 @@ Python can be found here: https://www.python.org/download/releases/2.7.5/
 Instructions on setting up Pyton on your computer can be found here: https://apps.carleton.edu/curricular/cs/resources/source/python_install/
 
 
-##Usage Instructions:
+## Usage Instructions:
 (Mac) Open a terminal window by navigating to "Applications -> Utilities -> Terminal" and clicking on the Terminal icon
 (PC) Open a command prompt by selecting Start/Run and typing cmd and Enter or Start/Programs/Accessories/Command Prompt.
 
@@ -81,14 +81,14 @@ Once there there are several options on how to run the program.
   - This will automatically run Exiftool on the directory you provide
   
 
-###Input
+### Input
 - A directory of bags (folders) to run exiftool's analysis on.
 
-###Output
+### Output
 - An .xml file containing exiftool's analysis in each bag.
 - A .csv file containing exiftool's analysis in each bag.
 
-###Example of syntax
+### Example of syntax
 
 If you would like to run exiftool using different options, use these samples to execute the program in Bach or a command prompt.
 
